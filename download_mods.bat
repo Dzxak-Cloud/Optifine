@@ -17,17 +17,19 @@ set "mods[5]=JEI|https://mediafilez.forgecdn.net/files/5793/297/jei-1.20.1-forge
 set "mods[6]=Optifine|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/OptiFine_1.20.1_HD_U_I6.jar"
 set "mods[7]=Balm|https://mediafilez.forgecdn.net/files/5644/976/balm-forge-1.20.1-7.3.9-all.jar"
 set "mods[8]=BackPacked|https://mediafilez.forgecdn.net/files/4725/669/backpacked-forge-1.20.1-2.2.5.jar"
+set "mods[9]=TreeChopper|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/Tree-Harvester-Mod-Forge-Fabric-Quilt-1.20.1.jar"
+set "mods[10]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/EasierSleeping-1.20.1-2.1.3.jar"
 
 :: Tampilkan informasi jumlah mod yang akan di-download
 cls
 echo =====================================
 echo              DOWNLOADS MOD
 echo =====================================
-echo Jumlah Mod yang Dipasang: 8
+echo Jumlah Mod yang Dipasang: 11
 echo Daftar Mods:
 echo -------------------------------------
 
-for /L %%i in (0, 1, 7) do (
+for /L %%i in (0, 1, 11) do (
     for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
         echo - %%a
     )
@@ -46,7 +48,7 @@ if /i "%confirm%"=="y" (
     :: Mulai proses download
     echo -------------------------------------
     echo Memulai proses download...
-    for /L %%i in (0, 1, 7) do (
+    for /L %%i in (0, 1, 11) do (
         for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
             echo Mendownload %%a...
             powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile '%mod_folder%\%%~nxb'"
