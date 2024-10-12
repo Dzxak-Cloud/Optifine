@@ -26,7 +26,7 @@ echo Jumlah Mod yang Dipasang: 8
 echo Daftar Mods:
 echo -------------------------------------
 
-for /L %%i in (0, 1, 6) do (
+for /L %%i in (0, 1, 7) do (
     for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
         echo - %%a
     )
@@ -45,7 +45,7 @@ if /i "%confirm%"=="y" (
     :: Mulai proses download
     echo -------------------------------------
     echo Memulai proses download...
-    for /L %%i in (0, 1, 6) do (
+    for /L %%i in (0, 1, 7) do (
         for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
             echo Mendownload %%a...
             powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile '%mod_folder%\%%~nxb'"
