@@ -16,6 +16,7 @@ set "mods[4]=GraveStone|https://mediafilez.forgecdn.net/files/5794/82/gravestone
 set "mods[5]=JEI|https://mediafilez.forgecdn.net/files/5793/297/jei-1.20.1-forge-15.20.0.104.jar"
 set "mods[6]=Optifine|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/OptiFine_1.20.1_HD_U_I6.jar"
 set "mods[7]=Balm|https://mediafilez.forgecdn.net/files/5644/976/balm-forge-1.20.1-7.3.9-all.jar"
+set "mods[8]=BackPacked|https://mediafilez.forgecdn.net/files/4725/669/backpacked-forge-1.20.1-2.2.5.jar"
 
 :: Tampilkan informasi jumlah mod yang akan di-download
 cls
