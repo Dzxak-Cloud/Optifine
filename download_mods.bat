@@ -15,13 +15,14 @@ set "mods[3]=IronChest|https://mediafilez.forgecdn.net/files/4614/852/ironchest-
 set "mods[4]=GraveStone|https://mediafilez.forgecdn.net/files/5794/82/gravestone-forge-1.20.1-1.0.24.jar"
 set "mods[5]=JEI|https://mediafilez.forgecdn.net/files/5793/297/jei-1.20.1-forge-15.20.0.104.jar"
 set "mods[6]=Optifine|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/OptiFine_1.20.1_HD_U_I6.jar"
+set "mods[7]=Balm|https://mediafilez.forgecdn.net/files/5644/976/balm-forge-1.20.1-7.3.9-all.jar"
 
 :: Tampilkan informasi jumlah mod yang akan di-download
 cls
 echo =====================================
 echo              DOWNLOADS MOD
 echo =====================================
-echo Jumlah Mod yang Dipasang: 6
+echo Jumlah Mod yang Dipasang: 8
 echo Daftar Mods:
 echo -------------------------------------
 
