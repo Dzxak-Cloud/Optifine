@@ -18,10 +18,10 @@ set "mods[9]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/Easi
 set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collective-1.20.1-7.84.jar"
 
 cls
-echo Downloading Mods...
-
+echo Menampilkan mods...
+timeout 10
 :: Tampilkan daftar mod yang akan di-download
-echo Mods to be downloaded:
+echo Mod yang akan di download:
 for /L %%i in (0, 1, 1000) do (
     if defined mods[%%i] (
         for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
