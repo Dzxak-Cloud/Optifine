@@ -34,7 +34,7 @@ for /L %%i in (0, 1, 1000) do (
 
 :ask_confirm
 :: Konfirmasi untuk melanjutkan download
-set /p confirm="Do you want to continue downloading these mods? (y/n): "
+set /p confirm="Mau melanjutkan Download Mod-Mod ini? (y/n): "
 if /i "%confirm%" neq "y" (
     echo Download canceled.
     goto end
