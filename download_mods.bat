@@ -18,17 +18,18 @@ set "mods[6]=Optifine|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/ref
 set "mods[7]=Balm|https://mediafilez.forgecdn.net/files/5644/976/balm-forge-1.20.1-7.3.9-all.jar"
 set "mods[8]=TreeChopper|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/Tree-Harvester-Mod-Forge-Fabric-Quilt-1.20.1.jar"
 set "mods[9]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/EasierSleeping-1.20.1-2.1.3.jar"
+set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collective-1.20.1-7.84.jar"
 
 :: Tampilkan informasi jumlah mod yang akan di-download
 cls
 echo =====================================
 echo              DOWNLOADS MOD
 echo =====================================
-echo Jumlah Mod yang Dipasang: 10
+echo Jumlah Mod yang Dipasang: 11
 echo Daftar Mods:
 echo -------------------------------------
 
-for /L %%i in (0, 1, 9) do (
+for /L %%i in (0, 1, 10) do (
     for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
         echo - %%a
     )
@@ -47,7 +48,7 @@ if /i "%confirm%"=="y" (
     :: Mulai proses download
     echo -------------------------------------
     echo Memulai proses download...
-    for /L %%i in (0, 1, 9) do (
+    for /L %%i in (0, 1, 10) do (
         for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
             echo Mendownload %%a...
             powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile '%mod_folder%\%%~nxb'"
