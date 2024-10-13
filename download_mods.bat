@@ -1,10 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-
-:: Mengatur warna teks
 color 0A
 
-:: Folder tujuan di mana mod akan disimpan
 set "mod_folder=%APPDATA%\.minecraft\mods"
 
 :: Daftar mod yang akan di-download
@@ -20,55 +17,47 @@ set "mods[8]=TreeChopper|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/
 set "mods[9]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/EasierSleeping-1.20.1-2.1.3.jar"
 set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collective-1.20.1-7.84.jar"
 
-:: Tampilkan informasi jumlah mod yang akan di-download
 cls
-echo =====================================
-echo              DOWNLOADS MOD
-echo =====================================
-echo Jumlah Mod yang Dipasang: 11
-echo Daftar Mods:
-echo -------------------------------------
+echo Downloading Mods...
 
-for /L %%i in (0, 1, 10) do (
-    for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
-        echo - %%a
+:: Tampilkan daftar mod yang akan di-download
+echo Mods to be downloaded:
+for /L %%i in (0, 1, 1000) do (
+    if defined mods[%%i] (
+        for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
+            echo - %%a
+        )
+    ) else (
+        goto ask_confirm
     )
 )
 
-:: Tanyakan persetujuan untuk melanjutkan download
-echo -------------------------------------
-set /p confirm="Apakah kamu ingin melanjutkan download mod-mod ini? (y/n): "
+:ask_confirm
+:: Konfirmasi untuk melanjutkan download
+set /p confirm="Do you want to continue downloading these mods? (y/n): "
+if /i "%confirm%" neq "y" (
+    echo Download canceled.
+    goto end
+)
 
-if /i "%confirm%"=="y" (
-    :: Buat folder mods jika belum ada
-    if not exist "%mod_folder%" (
-        mkdir "%mod_folder%"
-    )
+if not exist "%mod_folder%" mkdir "%mod_folder%"
 
-    :: Mulai proses download
-    echo -------------------------------------
-    echo Memulai proses download...
-    for /L %%i in (0, 1, 10) do (
+:: Loop otomatis untuk mendownload mod
+for /L %%i in (0, 1, 1000) do (
+    if defined mods[%%i] (
         for /f "tokens=1,2 delims=|" %%a in ("!mods[%%i]!") do (
-            echo Mendownload %%a...
+            echo Downloading %%a...
             powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile '%mod_folder%\%%~nxb'"
         )
+    ) else (
+        goto done
     )
-
-    echo.
-    echo Download selesai! Mod-mod telah disimpan di %mod_folder%.
-
-    :: Buka File Explorer di folder mods
-    explorer "%mod_folder%"
-    
-) else (
-    echo Download dibatalkan.
 )
 
-:: Menghapus file skrip batch ini setelah selesai
-set "batch_file=%~f0"
-ping -n 5 127.0.0.1 > nul  :: Tunggu beberapa detik sebelum menghapus
-del "%batch_file%"
+:done
+echo Download finished.
+explorer "%mod_folder%"
 
-echo -------------------------------------
-pause
+:end
+:: Menghapus skrip setelah selesai
+del "%~f0"
