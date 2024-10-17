@@ -16,6 +16,7 @@ set "mods[7]=Balm|https://mediafilez.forgecdn.net/files/5644/976/balm-forge-1.20
 set "mods[8]=TreeChopper|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/refs/heads/main/Tree-Harvester-Mod-Forge-Fabric-Quilt-1.20.1.jar"
 set "mods[9]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/EasierSleeping-1.20.1-2.1.3.jar"
 set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collective-1.20.1-7.84.jar"
+set "mods[11]=FallingTree|https://mediafilez.forgecdn.net/files/5010/620/FallingTree-1.20.1-4.3.4.jar"
 
 cls
 echo Menampilkan mods...
