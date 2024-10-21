@@ -17,6 +17,8 @@ set "mods[8]=TreeChopper|https://raw.githubusercontent.com/Dzxak-Cloud/Optifine/
 set "mods[9]=EasierSpleeping|https://mediafilez.forgecdn.net/files/4628/693/EasierSleeping-1.20.1-2.1.3.jar"
 set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collective-1.20.1-7.84.jar"
 set "mods[11]=OreExavation|https://mediafilez.forgecdn.net/files/5754/631/oreexcavation-1.13.174.jar"
+set "mods[12]=SimpleVoiceChat|https://mediafilez.forgecdn.net/files/5794/966/voicechat-forge-1.20.1-2.5.24.jar"
+set "mods[13]=MobHealthBar|https://mediafilez.forgecdn.net/files/4682/162/mobhealthbar-forge-1.20.1-2.2.0.jar"
 
 cls
 echo Menampilkan mods...
