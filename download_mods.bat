@@ -19,9 +19,9 @@ set "mods[10]=Collective|https://mediafilez.forgecdn.net/files/5631/814/collecti
 set "mods[11]=OreExavation|https://mediafilez.forgecdn.net/files/5754/631/oreexcavation-1.13.174.jar"
 set "mods[12]=SimpleVoiceChat|https://mediafilez.forgecdn.net/files/5794/966/voicechat-forge-1.20.1-2.5.24.jar"
 set "mods[13]=MobHealthBar|https://mediafilez.forgecdn.net/files/4682/162/mobhealthbar-forge-1.20.1-2.2.0.jar"
-set "mods[14]=Sophiscated Backpacks|https://mediafilez.forgecdn.net/files/5787/630/sophisticatedbackpacks-1.20.1-3.20.11.1115.jar"
+set "mods[14]=SophiscatedBackpacks|https://mediafilez.forgecdn.net/files/5787/630/sophisticatedbackpacks-1.20.1-3.20.11.1115.jar"
 set "mods[15]=CuriosAPI|https://mediafilez.forgecdn.net/files/5843/594/curios-forge-5.11.0%2B1.20.1.jar"
-set "mods[16]=Sophiscated Core|https://mediafilez.forgecdn.net/files/5801/688/sophisticatedcore-1.20.1-0.6.34.718.jar"
+set "mods[16]=SophiscatedCore|https://mediafilez.forgecdn.net/files/5801/688/sophisticatedcore-1.20.1-0.6.34.718.jar"
 
 cls
 echo Menampilkan mods...
