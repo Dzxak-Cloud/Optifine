@@ -5,7 +5,7 @@ color 0A
 set "mod_folder=%APPDATA%\.minecraft"
 
 :: Link to the mods.zip file
-set "mods_zip_url="https://doc-10-18-docs.googleusercontent.com/docs/securesc/3prfoc3olk9bnf64f3g7hi4v373725fa/rnj5mpr35eefn2gn82b3322k47aor7d4/1731490950000/01384825447918626680/18058053277852350779Z/1K92uS95ktniQxxgjYTHn4-NCBmBQejUP?e=download&uuid=c380e477-c85f-411e-9fff-f646da0687df"
+set "mods_zip_url="blob:https://web.telegram.org/b4f284d8-506d-4785-8266-acd013382ce7"
 set "zip_path=%APPDATA%\.minecraft\mods.zip"
 
 cls
