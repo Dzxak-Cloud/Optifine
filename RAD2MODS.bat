@@ -5,7 +5,7 @@ color 0A
 set "mod_folder=%APPDATA%\.minecraft"
 
 :: Link to the mods.zip file
-set "mods_zip_url=https://download1324.mediafire.com/cwuk8dnfhtqg-3Mzw3wuqaJhDiZCd0IT2YgDLWswsMuZN32YJinksbLcmDf4O2B_y4dIHzv5fhoDPW_77b-HDvALGySTiTAuxpoSM7HQtCR0iXmvo9jUC4jNgM4cF6KUFecRXQsfM_rWib5fyvudypPaqHlOb7r8x4RdV03gu0WXPpk/3a0yroky0w7ixdt/mods.zip"
+set "mods_zip_url=350779Z/1K92uS95ktniQxxgjYTHn4-NCBmBQejUP?e=download&uuid=c380e477-c85f-411e-9fff-f646da0687df&nonce=i7garu82jnmkm&user=18058053277852350779Z&hash=uqhb5bra25d3acctfs8limg9uvs6c6ojSTiTAuxpoSM7HQtCR0iXmvo9jUC4jNgM4cF6KUFecRXQsfM_rWib5fyvudypPaqHlOb7r8x4RdV03gu0WXPpk/3a0yroky0w7ixdt/mods.zip"
 set "zip_path=%APPDATA%\.minecraft\mods.zip"
 
 cls
